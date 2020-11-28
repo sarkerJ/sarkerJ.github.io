@@ -65,7 +65,7 @@ li:hover {
     height: inherit;
     display: inline-flexbox;
     text-align: center;
-    font-family: RaleWay, sans-serif; 
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 
 }
 
@@ -76,7 +76,7 @@ li:hover {
     height: inherit;
     float: left;
     text-align: center;
-    font-family: RaleWay, sans-serif; 
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 .listNoType {
@@ -93,18 +93,21 @@ hr {
     margin: 0;
 }
 
+a{
+    text-align: center;
+}
 
 p 
 {
     text-align: center;
-    font-family: Roboto, serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 1vw;
 }
 
 h1 {
     text-align: center;
     color: white;
-    font-family: RaleWay, sans-serif;    
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-style:oblique;
     font-size:4.5vw;
     margin-bottom:7vh;
@@ -112,7 +115,7 @@ h1 {
 
 h2{
     margin: 0;
-    font-family: RaleWay, sans-serif; 
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     color: white;
     text-align: center;
 
@@ -133,7 +136,7 @@ h2{
 #h1-Name2{
     margin:0;
     padding-top:2vh;
-    font-size:3vw;
+    font-size:2.5vw;
 }
 h2{
     text-align:center;
@@ -228,12 +231,47 @@ a.externalLinks:hover {
 }
 
 .pWithCenteredWhite {
-/*    display: inline-block;*/ 
-    
+/*    display: inline-block;*/     
 align-content: center;
 padding: 1vw;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
+
+.divShape-BasedOnElement{
+    margin: auto;
+    margin-top: 8vh;
+    width: 10%;
+    border-radius: 2vmin; /*rounded corners*/
+    background:rgb(51, 177, 177);
+    border: 3px solid #89def8;
+    box-shadow: 0 0 20px 10px #a9e5f0;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+}
+.divShape-BasedOnElement:hover {
+    background: rgba(8, 97, 76, 0.6);
+box-shadow: rgba(7, 68, 54, 0.6);
+} 
+
+.aTest {
+    width: 60vw;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 3px solid #fafafa;
+    padding: 25px;
+    background: rgba(216, 242, 243, 0.5);
+    
+  }
+  .aTest:hover {
+    background: rgba(8, 97, 76, 0.6);
+  }
+  
+
+
+
 
 
 .divTesting {
@@ -257,6 +295,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 .AboutMe-OuterLayer {
     min-height: 100vh;
     background-image: url(https://picsum.photos//3000/2000?random=2%22);
+    text-align: center;
 }
 .Projects-OuterLayer {
     min-height: 100vh;
@@ -280,47 +319,4 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 .container{
     min-height:100vh;
-}
-
-.Shine{
-    height:220px;
-  width:100%;
-  background:#8ee4f3;
-  z-index:0;
-  position: relative;
-}
-.Shine span {
-    color:#fff;
-    left:50%;
-    transform:translate(-50%,-50%);
-    position: absolute;
-    display: inline-block;
-    font-size:30px;
-    font-family:'open sans',sans-serif;
-    letter-spacing:-1px;
-    font-weight:bold;
-  }
-span {
-top:50%;
-}
-
-  .Shine:after {
-	content:'';
-  top:0;
-	transform:translateX(100%);
-	width:100%;
-	height:220px;
-	position: absolute;
-	z-index:1;
-	animation: slide 5s infinite;
-  
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.8)), color-stop(99%,rgba(128,186,232,0)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
-
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
-}
-
-
-  @keyframes slide {
-	0% {transform:translateX(-100%);}
-	100% {transform:translateX(100%);}
 }
