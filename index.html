@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="csstest.css" />
+   
+    <style>
+ 
+        body {
+             /* background-image: url('homepageImage.jpeg');  */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #aboveHeader{
+            background-color: black;
+            padding:0;
+            margin:0;
+        }
+
+        #pAHeader{
+            padding:0;
+            margin:0;
+            height: 0.1vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="aboveHeader">
+        <p id="pAHeader">.</p>
+    </div>
+
+    
+    <header>
+        <nav id="mainNav">
+            <ul class="navItems">
+                <li class="navItems-li-Active"><a href="#homeDiv">Home</a></li>
+                <li class="navItems-li"><a href="#AboutMe">About Me</a></li>
+                <li class="navItems-li"><a href="#Projects">Projects</a></li>
+                <li class="navItems-li"><a href="#MyCV">My CV</a></li>
+                <li class="navItems-li"><a href="#ContactMe">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="homeDiv turnOpaque">
+        <h1 id="h1-Name">Welcome to my Portfolio!</h1>
+        <h1 class="NonOpaque" id="h1-Name1">Sarker Jawad Islam</h1>
+        <h1 class="NonOpaque" id="h1-Name2">C# Developer</h1>
+
+
+
+        <!-- <p id="welcomeP">An aspiring developer who is passionate about technology</p>
+        <h2>Want to learn more?</h2>
+        <p id="welcomeP">Check out my other pages !</p> -->
+    </div>
+
+    <div class="AboutMe-OuterLayer" id="AboutMe">
+        <br />
+        <br />
+        <h1 class="h1Test">About Me</h1>
+    </div>
+    
+    <div class="Projects-OuterLayer" id="Projects">
+        <br />
+        <br />
+        <h1 class="h1Test">Projects</h1>
+    </div>
+    <div class="MyCV-OuterLayer" id="MyCV">
+        <br />
+        <br />
+        <h1 class="h1Test">My CV</h1>
+    </div>
+    
+    <div class="ContactMe-OuterLayer" id="ContactMe">
+        <br />
+        <br />
+        <h1 class="h1Test">Contact Me</h1>
+    </div>
+
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("mainNav");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+</body>
+</html>
