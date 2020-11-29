@@ -16,9 +16,9 @@ body {
 
 .image-container {
     text-align:center;
-    width: 50vw;
-    height: 50vh;
-    margin-left: 4.6vw;
+    width: 35vw;
+    height: 40vh;
+    margin-left: 7vw;
 
 }
 
@@ -28,6 +28,7 @@ body {
     width: inherit;
     border-radius: 5%;
     text-align: center;
+    box-shadow: 0 0 6px 4px #8ea9a8;
 
 }
 
@@ -160,7 +161,7 @@ h2{
 }
 
 .paddingDivTop{
-    padding-top:20vh;
+    padding-top:10vh;
 
 }
 
@@ -240,7 +241,7 @@ a.externalLinks:hover {
 }
 
 .divCenteredWhite {
-    width: 60vw;
+    width: 50vw;
     border-radius: 2vmin; /*rounded corners*/
     margin: auto;
     background-color: white;
@@ -335,7 +336,7 @@ a.aTagHome:hover{
 
 
 .AboutMe-OuterLayer {
-    min-height: 60vh;
+    min-height: 80vh;
     /* background-image: url(aboutMebackground.jpg); */
     background-color: white;
     text-align: center;
