@@ -15,10 +15,18 @@ body {
 
 
 .image-container {
-    text-align: center;
-    float: right;
-    width: 10vw;
-    height: inherit;
+    display:table-cell; 
+    vertical-align:middle; 
+    text-align:center;
+    width: 90vw;
+    height: 20%;
+}
+
+.image-container img{
+    height: 50%;
+    width: 50%;
+    border-radius: 2%;
+
 }
 
 #mainNav {
@@ -235,6 +243,13 @@ a.externalLinks:hover {
     box-shadow: 0 0 20px 10px #8ea9a8;
 }
 
+.divCenteredWhite1 {
+    width: 50vw;
+    border-radius: 2vmin; /*rounded corners*/
+    margin: auto;
+    background-color: white;
+}
+
 .pWithCenteredWhite {
 /*    display: inline-block;*/     
 align-content: center;
@@ -299,22 +314,20 @@ a.aTagHome:hover{
     inset -10px 0 10px #0ff, /* inner left magenta broad */
     inset -10px 0 30px #0ff;
 }
-/* 
-.divTestH1 {
-    min-height: 100vh;
-    background-image: url(https://picsum.photos//3000/2000?random=1%22);
-} */
+
+
 .AboutMe-OuterLayer {
-    min-height: 100vh;
-    background-image: url(aboutMebackground.jpg);
+    min-height: 60vh;
+    /* background-image: url(aboutMebackground.jpg); */
+    background-color: white;
     text-align: center;
     background-size: cover;
 
 }
+
 .Projects-OuterLayer {
-    min-height: 300vh;
-    /* background-image: url(https://picsum.photos//3000/2000?random=3%22); */
-    background-color: black;
+    min-height: 320vh;
+    background-color: rgb(22, 21, 21);
 }
 .MyExperience-OuterLayer {
     min-height: 100vh;
@@ -349,3 +362,17 @@ a.aTagHome:hover{
 .marginBottom{
     margin-bottom: 20vh;
 }
+div#wrapper div { 
+    display: inline-block; 
+  }
+#s1 {
+    float: left;
+    width: 50%;
+    
+    }
+    
+    #s2 {
+    float: left;
+    width: 50%;
+    }
+    
