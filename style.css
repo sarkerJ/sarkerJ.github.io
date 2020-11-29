@@ -15,17 +15,19 @@ body {
 
 
 .image-container {
-    display:table-cell; 
-    vertical-align:middle; 
     text-align:center;
-    width: 90vw;
-    height: 20%;
+    width: 50vw;
+    height: 50vh;
+    margin-left: 4.6vw;
+
 }
 
+
 .image-container img{
-    height: 50%;
-    width: 50%;
-    border-radius: 2%;
+    height: inherit;
+    width: inherit;
+    border-radius: 5%;
+    text-align: center;
 
 }
 
@@ -130,6 +132,12 @@ h2{
    
 }
 
+.h1HeaderName{
+    margin-top: auto;
+    margin-bottom:2vh;
+    
+}
+
 #h1-Name{
     margin:0;
     padding-top:10vh;
@@ -189,29 +197,29 @@ h2{
 }
 
 .cvDiv {
-    width: 100vw;
+    width: 97.8%;
     margin: auto;
     padding: 1vw;
     text-align: center;
     font-size: 40px;
-    background-color: #373739;
-    border-radius: 0;
-    transition: width 2s;
+    /* background-color: #373739; */
+    /* border-radius: 0; */
+    /* transition: width 2s; */
 }
 .cvDiv2 {
-    width: 100vw;
+    width: 100%;
     margin: auto;
+    margin-top: 0;
+    padding-top: 0;
     text-align: center;
     font-size: 40px;
-    background-color: #8a8a91;
-
-
+    background-color: #373739;
 }
  
-.cvDiv:hover {
+/* .cvDiv:hover {
     width: 400px;
     background-color: #494848;
-}
+} */
 
 a.externalLinks:link {
     color: deepskyblue;
@@ -257,6 +265,16 @@ padding: 1vw;
 font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 font-size: 1.4vw;
 }
+
+.pdWhite {
+    /*    display: inline-block;*/     
+    align-content: center;
+    padding: 1vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 1.4vw;
+    color: white;
+    margin:0;
+    }
 
 .divShape-BasedOnElement{
     margin: auto;
@@ -326,7 +344,7 @@ a.aTagHome:hover{
 }
 
 .Projects-OuterLayer {
-    min-height: 350vh;
+    min-height: 400vh;
     background-color: rgb(22, 21, 21);
 }
 .MyExperience-OuterLayer {
@@ -335,7 +353,8 @@ a.aTagHome:hover{
 }
 .ContactMe-OuterLayer {
     min-height: 100vh;
-    background-image: url(https://picsum.photos//3000/2000?random=5%22);
+    /* background-image: url(https://picsum.photos//3000/2000?random=5%22); */
+    background-color: rgb(27, 27, 27);
 }
 
 
@@ -370,9 +389,65 @@ div#wrapper div {
     width: 50%;
     
     }
+
+#s2 {
+float: left;
+width: 50%;
+}
     
-    #s2 {
-    float: left;
-    width: 50%;
-    }
+input[type=text], input[type=email], select, textarea {
+    width: 80%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid transparent;
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  input[type=submit] {
+    background-color: #85c7cd;
+    opacity: 0.5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
     
+  }
+
+  input[type=submit]:hover {
+    background-color: #719ca0;
+    opacity: 1;
+  }
+  
+  .formLabel{
+    color: white;
+    font-size: 1.2vw;
+  }
+
+  /* Add a background color and some padding around the form */
+  .ContactContainer {
+    margin: auto;
+    width: 60vw;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 1vh;
+    text-align: center;
+    background-color: #312f2f53;
+  }
+
+  .divLogo{
+      width: 2svw;
+      margin-top: 1vh;
+      height: 10vh;
+      float: right;
+      margin-right: 2vw;
+  }
+
+  .divLogo img{
+    width: 0.8svw;
+    height: 8vh;
+    border-radius: 50%;
+  }
