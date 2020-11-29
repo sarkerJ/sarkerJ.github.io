@@ -63,8 +63,8 @@ li:hover {
     /* padding-top: 2.5vh; */
     font-size: 2.5vh;
     height: inherit;
-    display: inline-flexbox;
-    text-align: center;
+/*    display: inline-flexbox;
+*/    text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 
 }
@@ -108,7 +108,7 @@ h1 {
     text-align: center;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-style:oblique;
+    /* font-style:oblique; */
     font-size:4.5vw;
     margin-bottom:7vh;
 }
@@ -124,7 +124,7 @@ h2{
 
 #h1-Name{
     margin:0;
-    padding-top:20vh;
+    padding-top:10vh;
     font-size:2vw;
 }
 
@@ -137,13 +137,15 @@ h2{
     margin:0;
     padding-top:2vh;
     font-size:2.5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h2{
     text-align:center;
 }
-h5 {
-    text-align: center;
-    margin: 0;
+
+.paddingDivTop{
+    padding-top:20vh;
+
 }
 
 .homeDiv{
@@ -153,9 +155,12 @@ h5 {
 }
 
 .turnOpaque :not(.NonOpaque){
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
+.turnOpaque1 :not(.NonOpaque1){
+    background-color: rgba(255,255,255,0.5);
+}
 #welcomeP {
     color: white;
     font-size: 3vw;
@@ -235,44 +240,51 @@ a.externalLinks:hover {
 align-content: center;
 padding: 1vw;
 font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+font-size: 1.4vw;
 }
 
 .divShape-BasedOnElement{
     margin: auto;
-    margin-top: 8vh;
+    margin-top: 3vh;
     width: 10%;
-    border-radius: 2vmin; /*rounded corners*/
-    background:rgb(51, 177, 177);
+    background:transparent;
     border: 3px solid #89def8;
     box-shadow: 0 0 20px 10px #a9e5f0;
     padding: 10px;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 0.2vw;
+    text-decoration: none;
 
 }
 .divShape-BasedOnElement:hover {
-    background: rgba(8, 97, 76, 0.6);
-box-shadow: rgba(7, 68, 54, 0.6);
+    background:rgb(122, 224, 224);
+    box-shadow: 0 0 20px 10px #b8e0fa;
+    border: 3px solid #87c0f5;
+
 } 
 
-.aTest {
+.divLeft{
     width: 60vw;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    border: 3px solid #fafafa;
-    padding: 25px;
-    background: rgba(216, 242, 243, 0.5);
+    border-radius:0; /*rounded corners*/
+    margin: auto;
+    background-color: transparent;
     
-  }
-  .aTest:hover {
-    background: rgba(8, 97, 76, 0.6);
-  }
-  
+}
 
+a.aTagHome{
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a.aTagHome:hover{
+    text-decoration: underline;
+}
+.pHomeTag{
+    color: black; 
+    border-radius: 2vmin;
+    letter-spacing: 0.1vw;
+    border: 3px solid #89def8;
 
-
-
+}
 
 .divTesting {
     border-radius: 50%;
@@ -287,21 +299,24 @@ box-shadow: rgba(7, 68, 54, 0.6);
     inset -10px 0 10px #0ff, /* inner left magenta broad */
     inset -10px 0 30px #0ff;
 }
-
+/* 
 .divTestH1 {
     min-height: 100vh;
     background-image: url(https://picsum.photos//3000/2000?random=1%22);
-}
+} */
 .AboutMe-OuterLayer {
     min-height: 100vh;
-    background-image: url(https://picsum.photos//3000/2000?random=2%22);
+    background-image: url(aboutMebackground.jpg);
     text-align: center;
+    background-size: cover;
+
 }
 .Projects-OuterLayer {
-    min-height: 100vh;
-    background-image: url(https://picsum.photos//3000/2000?random=3%22);
+    min-height: 300vh;
+    /* background-image: url(https://picsum.photos//3000/2000?random=3%22); */
+    background-color: black;
 }
-.MyCV-OuterLayer {
+.MyExperience-OuterLayer {
     min-height: 100vh;
     background-image: url(https://picsum.photos//3000/2000?random=4%22);
 }
@@ -319,4 +334,18 @@ box-shadow: rgba(7, 68, 54, 0.6);
 
 .container{
     min-height:100vh;
+}
+
+.projectTransition{
+    transition: height 2s;
+    height: 100px;
+    
+}
+
+.projectTransition:hover{
+    height: 300px;
+}
+
+.marginBottom{
+    margin-bottom: 20vh;
 }
