@@ -76,7 +76,7 @@ li:hover {
     height: inherit;
 /*    display: inline-flexbox;
 */    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: "roboto", sans-serif;
 
 }
 
@@ -87,7 +87,7 @@ li:hover {
     height: inherit;
     float: left;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: "roboto", sans-serif;
 }
 
 .listNoType {
@@ -111,14 +111,14 @@ a{
 p 
 {
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: "roboto", serif;
     font-size: 1vw;
 }
 
 h1 {
     text-align: center;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: "roboto", sans-serif;
     /* font-style:oblique; */
     font-size:4.5vw;
     margin-bottom:7vh;
@@ -126,7 +126,7 @@ h1 {
 
 h2{
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: "roboto", sans-serif;
     color: white;
     text-align: center;
 
@@ -149,12 +149,13 @@ h2{
     margin:0;
     padding-top:7vh;
     font-size:4vw;
+    
 }
 #h1-Name2{
     margin:0;
     padding-top:2vh;
     font-size:2.5vw;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "roboto", sans-serif;
 }
 h2{
     text-align:center;
@@ -263,7 +264,7 @@ a.externalLinks:hover {
 /*    display: inline-block;*/     
 align-content: center;
 padding: 1vw;
-font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+font-family: "roboto", serif;
 font-size: 1.4vw;
 }
 
@@ -271,7 +272,7 @@ font-size: 1.4vw;
     /*    display: inline-block;*/     
     align-content: center;
     padding: 1vw;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: "roboto", serif;
     font-size: 1.4vw;
     color: white;
     margin:0;
@@ -307,7 +308,7 @@ font-size: 1.4vw;
 
 a.aTagHome{
     text-decoration: none;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "roboto", serif;
 }
 a.aTagHome:hover{
     text-decoration: underline;
@@ -406,7 +407,10 @@ input[type=text], input[type=email], select, textarea {
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
+    background-color: gray;
+    color: white;
+    
+}
 
   input[type=submit] {
     background-color: #85c7cd;
@@ -423,6 +427,9 @@ input[type=text], input[type=email], select, textarea {
     background-color: #719ca0;
     opacity: 1;
   }
+  ::placeholder{
+      color:white;
+  }
   
   .formLabel{
     color: white;
@@ -437,7 +444,7 @@ input[type=text], input[type=email], select, textarea {
     padding: 20px;
     margin-top: 1vh;
     text-align: center;
-    background-color: #312f2f53;
+    background-color: rgb(27, 27, 27);
   }
 
   .divLogo{

@@ -10,3 +10,12 @@ function myFunction() {
         navbar.classList.remove("sticky");
     }
 }
+
+function validateContactForm(){
+    var valid = true;
+
+    var userFullName = document.getElementById("fullname");
+    if(userFullName == ""){
+        document.getElementById("fullname").style.color = "red";
+    }
+}
