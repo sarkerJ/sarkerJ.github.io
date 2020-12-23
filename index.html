@@ -27,7 +27,118 @@
             height: 0.1vh;
         }
 
-        /* */
+        section
+        {
+            height: 100vh;
+        }
+        .content 
+        {
+        display: flex;
+        justify-content: space-between;
+        }
+        .projects
+        {
+            background-color: black;
+            color: white;
+            padding-top: 10vh;
+
+        }
+            .projects .content
+            {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+                .projects .content .servicesbx
+                {
+                    max-width: 25%;
+                    text-align: center;
+                    padding: 40px 20px;
+                    background-color: black;
+                    margin: 20px;
+                    border-radius: 20px;
+                    box-shadow: -6px -6px 20px rgb(54, 54, 54), 6px 6px 20px rgb(46, 45, 45);
+                }
+                .projects .content .servicesbx p 
+                {
+                    font-size: 1vw;
+                }
+
+                .projects .content .servicesbx img {
+                    max-width: 100%;
+                }
+
+                .projects .content .servicesbx img:hover {
+                    width: 100vw;
+                }
+
+                .projects .content .servicesbx h2 {
+                    font-weight: 500;
+                    font-size: 25px;
+                    margin-top: 10px;
+                }
+
+                .projects .content .servicesbx:hover {
+                    box-shadow: inset -6px -6px 10px rgba(255,255,255,0.5), inset 6px 6px 20px rgba(255,255,255,0.5);
+                }
+
+                .projects .content .servicesbx a {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: white;
+                    padding: 5px 10px;
+                    margin-top: 20px;
+                    border-radius: 20px;
+                    box-shadow: -4px -4px 15px rgb(88, 86, 86), 4px 4px 15px rgb(84, 84, 84);
+                }
+
+                    .projects .content .servicesbx a:hover {
+                        box-shadow: inset -4px -4px 15px rgba(255,255,255,1), inset 4px 4px 15px rgba(255,255,255,1);
+                    }
+
+
+        .aboutme
+        {
+            background-color: white;
+            color: black;
+            padding-top: 11vh;
+        }
+            .aboutme h1
+            {
+                color: black;
+            }
+            .aboutme .content
+            {
+                display: flex;
+                justify-content: left;
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+                .aboutme .content .servicesbx
+                {
+                    max-width: 50%;
+                    height: 50%;
+                    text-align: center;
+                    padding: 40px 20px;
+                    background-color: white;
+                    margin: 20px;
+                    margin-left: 100px;
+                    border-radius: 20px;
+                    box-shadow: -6px -6px 20px rgb(54, 54, 54), 6px 6px 20px rgb(46, 45, 45);
+                }
+
+                .aboutme .content .servicesbx img {
+                    max-width: 65%;
+                    /* max-height: 50%; */
+                }
+
+
+                .aboutme .content .servicesbx p 
+                {
+                    color: black;
+                    font-size: 1vw;
+                }
     </style>
 </head>
 
@@ -57,8 +168,7 @@
         <div class=" NonOpaque divLeft turnOpaque1">            
             <p class="NonOpaque pWithCenteredWhite pHomeTag">
                 Hi I'm Sarker a C# Developer and Consultant trainee with Sparta Global.
-                I have recently graduated from Brunel University with a degree in Computer Science. 
-                I created this website to provide an overview of myself as well as to practice my
+                I created this website to provide an overview of myself aswell as to practice my
                 web development skills.
                 <!-- I am currently using my time to further upskill myself both in the areas of consultancy
                 and as a developer so that  -->
@@ -77,59 +187,61 @@
         <p id="welcomeP">Check out my other pages !</p> -->
     </div>
 
-    <div class="AboutMe-OuterLayer paddingDivTop" id="AboutMe">
-        <h1 class="h1HeaderName" style="color: black; margin-top: 2vh;">About Me</h1>
-        <div class="divCenteredWhite1" >            
-            <p class=" pWithCenteredWhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at diam sed mauris finibus porta vel in nibh. Sed eu finibus arcu. Cras posuere ultrices risus sed pulvinar. Sed at libero luctus, dignissim ipsum non, dignissim ex. Sed molestie lacinia risus, in sodales ipsum vehicula vitae. Proin lobortis nunc sed malesuada blandit. Etiam dapibus elit ut sem consectetur porta </p>
-            <p class=" pWithCenteredWhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at diam sed mauris finibus porta vel in nibh. Sed eu finibus arcu. Cras posuere ultrices risus sed pulvinar. Sed at libero luctus, dignissim ipsum non, dignissim ex. Sed molestie lacinia risus, in sodales ipsum vehicula vitae. Proin lobortis nunc sed malesuada blandit. Etiam dapibus elit ut sem consectetur porta </p>
-        </div>     
-    </div>
-    
-    <div class="Projects-OuterLayer" style="padding-top: 5%;" id="Projects">
-        <h1 class="h1HeaderName" style="margin-bottom: 8vh; margin-top: 0;">My Projects</h1>
-        <div class="divLogo" >
-            <a  href="https://www.linkedin.com/in/sarker-jawad-islam-4673809a/" target="_blank" ><img src="linkedinLogo.jpg"></a><br>
-            <a href="https://github.com/sarkerJ" target="_blank"><img src="githubLogo.png" ></a><br>
-         </div>
-        <div class="divCenteredWhite marginBottom" style="    background-color: rgb(255, 255, 255);">
-            <h2 class="NonOpaque" style="color: black; margin-bottom: 2vh;">Project One</h2>
-            <div class="image-container">
-                <img src="gameProject.png" />
-            </div>
-            <p class="NonOpaque pWithCenteredWhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at diam sed mauris finibus porta vel in nibh. Sed eu finibus arcu. Cras posuere ultrices risus sed pulvinar. Sed at libero luctus, dignissim ipsum non, dignissim ex. Sed molestie lacinia risus, in sodales ipsum vehicula vitae. Proin lobortis nunc sed malesuada blandit. Etiam dapibus elit ut sem consectetur porta </p>  
+    <section class="aboutme" id="AboutMe"> 
+        <h1 class="h1HeaderName" style="margin-top: 0;">About Me</h1>
+        <div class="content" >
+            <div class="servicesbx">   
+                <p> 
+                    Hi again! As you might have learned my name is Sarker, I graduated from Brunel University with a degree in Computer Science. I recently completed a training with Sparta Global where I
+                    have learned to think both with a consultancy and technical mindset.
+                </p>
+                <p> 
+                    I am an individual who likes to take on new challenges and relishes the problem solving aspect that comes along when building new applications. Software development for me is not 
+                    about creating new applications, its more about embracing the constant changes that happen around technology and using those new innovations to build services that aim at helping the end user
+                    in one aspect or another.
+                </p>
+                <p> 
+                    The language which I am most comfortable with is C# and Java however I am always open to new opportunities and would use any chance provided to be to further extend my skills.  
+                </p>
+            </div> 
+
+            <div class="servicesbx">   
+                <img src="selfie.JPG"/>
+            </div>    
         </div>
-        <div class="divCenteredWhite marginBottom" style="    background-color: rgb(255, 255, 255);">
-            <h2 class="NonOpaque" style="color: black; margin-bottom: 2vh;">Project Two</h2>
-            
-            <div class="image-container">
-                <img src="testingImage.jpg" />
-            </div>
-            <p class="NonOpaque pWithCenteredWhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at diam sed mauris finibus porta vel in nibh. Sed eu finibus arcu. Cras posuere ultrices risus sed pulvinar. Sed at libero luctus, dignissim ipsum non, dignissim ex. Sed molestie lacinia risus, in sodales ipsum vehicula vitae. Proin lobortis nunc sed malesuada blandit. Etiam dapibus elit ut sem consectetur porta </p>
-        </div>
+    </section>
 
-        <div class="divCenteredWhite marginBottom" style="    background-color: rgb(255, 255, 255);">
-            <h2 class="NonOpaque" style="color: black; margin-bottom: 2vh;">Project Three</h2>
-
-            <div class="image-container">
-                <img src="testingImage.jpg" />
+    <section class="projects" id="Projects" >
+        <h1 class="h1HeaderName" style="margin-top: 0;">My Projects</h1>
+        <div class="content">
+            <div class="servicesbx">
+                <h2>Space Platformer Project</h2><br>
+                <img src="gameProject.png"/>
+                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at diam sed mauris finibus porta vel in nibh. Sed eu finibus arcu. Cras posuere ultrices risus sed pulvinar. Sed at libero luctus, dignissim ipsum non, dignissim ex. Sed molestie lacinia risus, in sodales ipsum vehicula vitae. Proin lobortis nunc sed malesuada blandit. Etiam dapibus elit ut sem consectetur porta </p>  
+                <a href="https://github.com/sarkerJ/Space-platform-Game" target="_blank">
+                    <span>More Info on Github</span>
+                </a>
             </div>
 
-            <p class="NonOpaque pWithCenteredWhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at diam sed mauris finibus porta vel in nibh. Sed eu finibus arcu. Cras posuere ultrices risus sed pulvinar. Sed at libero luctus, dignissim ipsum non, dignissim ex. Sed molestie lacinia risus, in sodales ipsum vehicula vitae. Proin lobortis nunc sed malesuada blandit. Etiam dapibus elit ut sem consectetur porta </p>
-
-        </div>
-
-        <div class="divCenteredWhite " style="    background-color: rgb(255, 255, 255);">
-            <h2 class="NonOpaque" style="color: black; margin-bottom: 2vh;">Project Four</h2>
-
-            <div class="image-container">
-                <img src="testingImage.jpg" />
+            <div class="servicesbx">
+                <h2>Space Platformer Project</h2><br>
+                <img src="gameProject.png"/>
+                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at diam sed mauris finibus porta vel in nibh. Sed eu finibus arcu. Cras posuere ultrices risus sed pulvinar. Sed at libero luctus, dignissim ipsum non, dignissim ex. Sed molestie lacinia risus, in sodales ipsum vehicula vitae. Proin lobortis nunc sed malesuada blandit. Etiam dapibus elit ut sem consectetur porta </p>  
+                <a href="https://github.com/sarkerJ/Space-platform-Game" target="_blank">
+                    <span>More Info on Github</span>
+                </a>
             </div>
-            
-            <p class="NonOpaque pWithCenteredWhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at diam sed mauris finibus porta vel in nibh. Sed eu finibus arcu. Cras posuere ultrices risus sed pulvinar. Sed at libero luctus, dignissim ipsum non, dignissim ex. Sed molestie lacinia risus, in sodales ipsum vehicula vitae. Proin lobortis nunc sed malesuada blandit. Etiam dapibus elit ut sem consectetur porta </p>
 
-        </div>
-    </div>
+            <div class="servicesbx">
+                <h2>Space Platformer Project</h2><br>
+                <img src="gameProject.png"/>
+                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at diam sed mauris finibus porta vel in nibh. Sed eu finibus arcu. Cras posuere ultrices risus sed pulvinar. Sed at libero luctus, dignissim ipsum non, dignissim ex. Sed molestie lacinia risus, in sodales ipsum vehicula vitae. Proin lobortis nunc sed malesuada blandit. Etiam dapibus elit ut sem consectetur porta </p>  
+                <a href="https://github.com/sarkerJ/Space-platform-Game" target="_blank">
+                    <span>More Info on Github</span>
+                </a>
+            </div>
 
+</section>
     <!-- <div class="MyExperience-OuterLayer" id="My-Experiences">
         <br />
         <br />
