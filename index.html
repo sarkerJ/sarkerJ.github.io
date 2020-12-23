@@ -33,8 +33,8 @@
         }
         .content 
         {
-        display: flex;
-        justify-content: space-between;
+            display: flex;
+            justify-content: space-between;
         }
         .projects
         {
@@ -54,6 +54,7 @@
                 {
                     display: inline-flexbox;
                     max-width: 25%;
+                    max-height: 30%;
                     text-align: center;
                     padding: 40px 20px;
                     background-color: black;
@@ -216,13 +217,35 @@
 
 
     <!-- PROJECT SECTION -->
-    <section class="projects" id="Projects" >
+    <section class="projects" style="height: 180vh;" id="Projects" >
         <h1 class="h1HeaderName" style="margin-top: 0;">My Projects</h1>
         <div class="content">
+
+            <div class="servicesbx">
+                <h2>Web Weekly-Planner</h2><br>
+                <img src="WebWeeklyPlanner.JPG"/>
+                <p >ASP.NET WEB Razor Page application based on the weekly-planner from a previous project.</p>
+                <p>The goal of this project was to create a web version of the weekly planner and familiarise myself with Razor Pages and ASP.NET</p>
+                <a href="https://github.com/sarkerJ/RazorPagesWeeklyPlanner" target="_blank">
+                    <span>More Info on Github</span>
+                </a>
+            </div>
+            
+            <div class="servicesbx">
+                <h2>RESTful API Project</h2><br>
+                <img src="defaultImage.jpg"/>
+                <p >API Application built using ASP.NET API with Visual Studio, C#, SQL and tested with Postman and Mock tests.</p>
+                <p>The goal was to create an API with Get and Post methods and to familiarise myself more with ASP.NET API and Postman.</p>
+                <a href="#">
+                    <span>No Github Link Yet</span>
+                </a>
+            </div>
+
             <div class="servicesbx">
                 <h2>Weekly-Planner Project</h2><br>
                 <img src="WeeklyPlanner1.JPG"/>
-                <p >A Weekly Planner Application built using Visual Studio, C#, XAML and SQL. The goal of this project was to provide users a means to track their weekly activities and notes throughout the week.  </p>  
+                <p >A Weekly Planner Application built using Visual Studio, C#, XAML and SQL. </p>
+                <p>The goal of this project was to provide users a means to track their weekly activities and notes throughout the week.</p>  
                 <a href="https://github.com/sarkerJ/Weekly-Planner" target="_blank">
                     <span>More Info on Github</span>
                 </a>
@@ -231,8 +254,18 @@
             <div class="servicesbx">
                 <h2>Radio  Project</h2><br>
                 <img src="Radio1.JPG"/>
-                <p >A 3-tier Radio Aplication built using Visual Studio and SQL. The goal of the project was to create an application that could be used to play some of the radio channels alongside some basic functionalities </p>  
+                <p >A 3-tier Radio Aplication built using Visual Studio and SQL.</p>
+                <p>The goal of the project was to create an application that could be used to play some of the radio channels alongside some basic functionalities. Above you can 3 examples of the Radio.</p>
                 <a href="https://github.com/sarkerJ/WPF-RadioProject" target="_blank">
+                    <span>More Info on Github</span>
+                </a>
+            </div>
+
+            <div class="servicesbx">
+                <h2>Calculator Project</h2><br>
+                <img src="calculator1.JPG" style="width: 50%;"/>
+                <p >A WPF application built using Visual Studio and C#. The goal of the project was to create a calculator that allows a user to execute simple operations. This was the further extended by adding "power", "modulo" and "square" operations </p>
+                <a href="https://github.com/sarkerJ/Weekly-Planner" target="_blank">
                     <span>More Info on Github</span>
                 </a>
             </div>
@@ -240,12 +273,13 @@
             <div class="servicesbx">
                 <h2>Space Platformer Project</h2><br>
                 <img src="gameProject.png"/>
-                <p >A space theme platform application built using Unity, Visual Studio and C#. The project goal was create a platform game with 3 levels with incremental difficulty. </p><br>
+                <p >A space  game built using Unity, Visual Studio & C#.</p>
+                <p>The project goal was create a platform game with 3 levels with incremental difficulty. Several requirements had to satisfied with the main one being the use of different game elements</p>
                 <a href="https://github.com/sarkerJ/Space-platform-Game" target="_blank">
                     <span>More Info on Github</span>
                 </a>
             </div>
-
+            
 </section>
     <!-- <div class="MyExperience-OuterLayer" id="My-Experiences">
         <br />
