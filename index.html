@@ -116,7 +116,7 @@
             .aboutme .content
             {
                 display: flex;
-                justify-content: left;
+                justify-content: center;
                 flex-wrap: wrap;
                 flex-direction: row;
             }
@@ -129,8 +129,20 @@
                     background-color: white;
                     margin: 20px;
                     margin-left: 100px;
-                    border-radius: 20px;
-                    box-shadow: -6px -6px 20px rgb(54, 54, 54), 6px 6px 20px rgb(46, 45, 45);
+                    /* border-radius: 20px; */
+                    box-shadow: -6px -6px 20px rgb(151 151 151), 6px 6px 20px rgb(168 168 168);
+                    height: 40vh;
+                }
+
+                #selfie
+                {
+                    background-image: url(selfie.JPG);
+                    background-repeat: no-repeat; 
+                    background-size: cover; 
+                    width: 20%; 
+                    /* height: 40vh; */
+                    display: inline-block;
+                    margin-left: 0%;
                 }
 
                 .aboutme .content .servicesbx img {
@@ -143,7 +155,12 @@
                 {
                     color: black;
                     font-size: 1vw;
+                    letter-spacing: 0.1vmin;
+                    margin-bottom: 3%;
+                    padding-left: 3%;
+                    padding-right: 3%;
                 }
+
     </style>
 </head>
 
@@ -195,8 +212,8 @@
     <section class="aboutme" id="AboutMe"> 
         <h1 class="h1HeaderName" style="margin-top: 0;">About Me</h1>
         <div class="content" >
-            <div class="servicesbx">   
-                <p> 
+            <div class="servicesbx" >   
+                <p > 
                     Hi again! As you might have learned my name is Sarker, I graduated from Brunel University with a degree in Computer Science. I recently completed a training with Sparta Global where I
                     have learned to think both with a consultancy and technical mindset.
                 </p>
@@ -208,11 +225,13 @@
                 <p> 
                     The language which I am most comfortable with is C# and Java however I am always open to new opportunities and would use any chance provided to be to further extend my skills.  
                 </p>
+                <p> 
+                    During my free time I like to read books, play games mainly adventure and team based games. I also do tuitioning in the weekend and when possible I teach my brother programming as we both are quite interested in it.   
+                </p>
             </div> 
 
-            <div class="servicesbx">   
-                <img src="selfie.JPG"/>
-            </div>    
+            <div class="servicesbx" id="selfie" style="border-radius: 0;">   
+            </div>     
         </div>
     </section>
 
