@@ -490,5 +490,5 @@ input[type=text], input[type=email], select, textarea {
     display: none;
     overflow: hidden;
     background-color: transparent;
-    margin-left: 6vw;
+    margin-left: 7%;
   }

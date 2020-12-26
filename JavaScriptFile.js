@@ -16,7 +16,7 @@ function validateContactForm(){
 
     var userFullName = document.getElementById("fullname");
     if(userFullName == ""){
-        document.getElementById("fullname").style.color = "red";
+        document.getElementById("name").style.color = "red";
     }
 }
 
@@ -34,3 +34,4 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+

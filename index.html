@@ -454,28 +454,46 @@
            <a href="https://github.com/sarkerJ" target="_blank"><img src="githubLogo.png" ></a><br>
         </div>
 
-        <button type="button" class="collapsible">Send an email</button>
+        <button type="button" class="collapsible">Display Contact Form</button>
         <div class="emailCollpaseContainer">
-        <div class="ContactContainer">
-            <form action="action_page.php">
-                <br>
-              <label class="formLabel" for="fullname">Full Name</label><br>
-              <input type="text" id="fullname" name="fullname" placeholder="Your full name.."><br>
-          
-              <label class="formLabel" for="email">Email</label><br>
-              <input type="email" id="email" name="email" placeholder="Your email.."><br><br>
-          
-              <label class="formLabel" for="subject">Subject</label> <br>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-              <br>
-              <input type="submit" value="Submit">
-          
+            <div class="ContactContainer">
+
+            <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+                action="https://script.google.com/macros/s/AKfycby5s1oHaRwRv8vsQ8s-mgI1oRaD0gd3DdqddNgx/exec">
+
+                    <div class="form-elements">
+                        <fieldset >
+                            <label class="formLabel" for="name">Name: </label><br>
+                            <input type="text" id="name" name="name" placeholder="Your name" />
+                        </fieldset>
+
+                        <fieldset >
+                            <label class="formLabel" for="message">Message: </label><br>
+                            <textarea id="message" name="message" rows="10"
+                            placeholder="What is on your mind..."></textarea>
+                        </fieldset>
+
+                        <fieldset >
+                            <label class="formLabel" for="email"><em>Your</em> Email Address:</label><br>
+                            <input id="email" name="email" type="email" value=""
+                            required placeholder="your.name@email.com"/>
+                            <span class="email-invalid" style="display:none"> Must be a valid email address</span>
+                        </fieldset>
+
+                        <button >Send</button>
+                    </div>
+
+                    <div class="thankyou_message" style="display:none;">
+                        <h2><em>Thank you</em> for contacting me! I will get back to you soon!</h2>
+                    </div>
+
             </form>
-        </div>
-    </div>
+        
+         </div>
     </div>
 
     <script src="JavaScriptFile.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="emailJs.js"></script>
 
 </body>
 </html>
