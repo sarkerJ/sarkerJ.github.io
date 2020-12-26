@@ -149,7 +149,7 @@ h2{
 
 #h1-Name1{
     margin:0;
-    padding-top:7vh;
+    padding-top:4vh;
     font-size:4vw;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
@@ -176,7 +176,7 @@ h2{
 .homeDiv{
     background-size: cover;
     min-height: 100vh;
-    background-image: url('homepageImage.jpeg');
+    background-image: url('Images/homepageImage.jpeg');
 }
 
 .turnOpaque :not(.NonOpaque){
@@ -414,12 +414,34 @@ input[type=text], input[type=email], select, textarea {
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-    background-color: gray;
+    background-color: #5f5d5d;
     color: white;
     
 }
 
-  input[type=submit] {
+.submit
+{
+    background-color: #000000;
+    opacity: 0.5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer; 
+    width:10vw;
+    font-weight: bold;
+    font-size: 1.2vw; 
+
+}
+
+.submit:hover
+{
+    background-color: #ffffff;
+    color: black;
+    opacity: 1;
+}
+
+  /* input[type=submit] {
     background-color: #85c7cd;
     opacity: 0.5;
     color: white;
@@ -433,7 +455,7 @@ input[type=text], input[type=email], select, textarea {
   input[type=submit]:hover {
     background-color: #719ca0;
     opacity: 1;
-  }
+  } */
   ::placeholder{
       color:white;
   }
