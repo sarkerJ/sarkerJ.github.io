@@ -6,71 +6,14 @@
     <title>Home</title>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->   
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
    
     <style>
+ 
         body {
              /* background-image: url('homepageImage.jpeg');  */
             background-repeat: no-repeat;
             background-size: cover;
-        }
-
-        body .no-padding {
-        padding-left: 0;
-        padding-right: 0;
-        }
-
-        body .carousel-control-prev-icon{
-            background-color: black;
-        }
-
-        body .carousel-control-next-icon {
-            background-color: black;
-        }
-
-        body .carousel-indicators li.active {
-            background-color: rgb(118, 117, 117);
-        }
-        body .carousel-indicators li {
-            background-color: black;
-        }
-
-        body .carousel-control-next {
-            top: 10vh;
-            right: -6vw;
-        }
-        body .carousel-control-prev {
-            left: -7vw;
-            top: 10vh;
-        }
-
-        body .carousel-indicators
-        {
-            top: 30vh;
-        }
-        
-        body .active, .collapsible :hover 
-        {
-            background-color: transparent;
-        }
-        .container{
-            min-height:23vh;
-            max-height: 23vh;
-            min-width: 80vw;
-            max-width: 80vw;
-            width: 80vw;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
         }
         #aboveHeader{
             background-color: black;
@@ -98,8 +41,7 @@
             background-color: black;
             color: white;
             padding-top: 10vh;
-            height: auto;
-            /* flex-wrap: wrap; */
+            height: 160vh;
 
         }
             .projects .content
@@ -112,7 +54,7 @@
                 .projects .content .servicesbx
                 {
                     display: inline-flexbox;
-                    max-width: 30%;
+                    max-width: 25%;
                     max-height: 30%;
                     text-align: center;
                     padding: 40px 20px;
@@ -130,7 +72,6 @@
                     width: 100%;
                     height: 50%;
                     max-width: 100%;
-                    margin-bottom: 1%;
                 }
 
                 /* .projects .content .servicesbx img:hover {
@@ -162,12 +103,12 @@
                     }
 
 
-        .aboutme 
+        .aboutme
         {
-            background-color: rgb(228, 225, 225);
+            background-color: white;
             color: black;
             padding-top: 11vh;
-            height: 130vh;
+            height: 140vh;
         }
             .aboutme h1
             {
@@ -191,7 +132,7 @@
                     margin-left: 100px;
                     /* border-radius: 20px; */
                     box-shadow: -6px -6px 20px rgb(151 151 151), 6px 6px 20px rgb(168 168 168);
-                    height: 45vh;
+                    height: 40vh;
                 }
 
                 #selfie
@@ -219,19 +160,115 @@
                     margin-bottom: 3%;
                     padding-left: 3%;
                     padding-right: 3%;
-                    line-height: 1;
                 }
 
-                .col-md-3 {
-                    display: inline-block;
-                    margin-left: -4px;
-                }
 
-                .col-md-3 img {
-                    width: 100%;
-                    height:20vh;
-                }
-                
+/*  ///////////////////////////////////// */
+        /* * {box-sizing:border-box} */
+
+        /* Slideshow container */
+        .slideshow-container {
+        box-sizing:border-box;
+        max-width: 1000px;
+        max-height: inherit;
+        position: relative;
+        margin: 0;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+        display: flex;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: rgb(251, 5, 5);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        }
+
+        .prev
+        {left: 0; }
+
+        /* Position the "next button" to the right */
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+        color: #ff0000;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+
+        .dotdiv
+        {
+            text-align:center; 
+            /* position: absolute; 
+            bottom: 0; */
+        }
+        /* The dots/bullets/indicators */
+        .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+        background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+        }
+
+        @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+        }
     </style>
 </head>
 
@@ -262,8 +299,11 @@
             <p class="NonOpaque pWithCenteredWhite pHomeTag">
                 Hi I'm Sarker a C# Developer and Consultant trainee with Sparta Global.
                 I created this website to provide an overview of myself aswell as to practice my
-                web development skills.  
+                web development skills.
+                <!-- I am currently using my time to further upskill myself both in the areas of consultancy
+                and as a developer so that  -->
             </p>
+            <!-- <p  style="color: white; font-size: 1.2vw;" >Feel free to browse through!</p> -->
         </div>
 
         <div class="divShape-BasedOnElement NonOpaque">            
@@ -271,13 +311,16 @@
                 <a class="NonOpaque aTagHome" style="color: white " href="#AboutMe">About Me</a>   
               </div>            
         </div>
+
+        <!-- <p id="welcomeP">An aspiring developer who is passionate about technology</p>
+        <h2>Want to learn more?</h2>
+        <p id="welcomeP">Check out my other pages !</p> -->
     </div>
 
     <section class="aboutme" id="AboutMe"> 
-        <br>
-        <h1 class="h1HeaderName" style="margin-top: 0; margin-bottom: 0;">About Me</h1>
+        <h1 class="h1HeaderName" style="margin-top: 0;">About Me</h1>
         <div class="content" >
-            <div class="servicesbx" style="margin-bottom: 2%;" >   
+            <div class="servicesbx" >   
                 <p > 
                     Hi again! As you might have learned my name is Sarker, I graduated from Brunel University with a degree in Computer Science. I recently completed a training with Sparta Global where I
                     have learned to think both with a consultancy and technical mindset.
@@ -288,74 +331,62 @@
                     in one aspect or another.
                 </p>
                 <p> 
-                    The language which I am most comfortable with is C# and Java however I am always open to new opportunities and would use any chance provided to be to further extend my skills.  
+                    The language which I am most comfortable with are C# and Java however I am always open to new opportunities and would use any chance provided to be to further extend my skills.  
                 </p>
                 <p> 
                     During my free time I like to read books, play games mainly adventure and team based games. I also do tuitioning in the weekend and when possible I teach my brother programming as we both are quite interested in it.   
                 </p>
             </div> 
 
-            <div class="servicesbx" id="selfie" style="border-radius: 0;">   
-            </div>     
-        </div>
-            
-        </div>
-        <div id="imagecarousel" class="carousel slide" data-ride="carousel" style="height: 22vh; width: 80vw; margin-left: 8vw;">
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li data-target="#imagecarousel" data-slide-to="0" class=""></li>
-                <li data-target="#imagecarousel" data-slide-to="1" class="active"></li>
-            </ul>
+            <div class="servicesbx" id="selfie" style="border-radius: 0;"></div>
 
-            <h2 style="color: black;">My Skills</h2><br>
-            <!-- The slideshow -->
-            <div class="container carousel-inner no-padding">
-                <div class="carousel-item active">
-                    <div class="col-xs-3 col-sm-3 col-md-3">
-                        <img src="htmlcssLogo.png">
+            <div class="servicesbx" style="width: 100vw;" >  
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div>
+                        <img src="WebWeeklyPlanner.JPG" style="width:35%;">
                     </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3">
-                        <img src="CSharpLogo.jpg.png">
-                    </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3">
-                        <img src="nunitLogo.png">
-                    </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3">
-                        <img src="sqlLogo.png">
+                    <div>
+                        <img src="WebWeeklyPlanner.JPG" style="width:35%;">
                     </div>
                 </div>
-                <div class="carousel-item ">
-                    <div class="col-xs-3 col-sm-3 col-md-3">
-                        <img src="WebWeeklyPlanner.JPG" >
-                    </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3">
-                        <img src="WebWeeklyPlanner.JPG" >
-                    </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3">
-                        <img src="WebWeeklyPlanner.JPG" >
-                    </div>
-                    <div class="col-xs-3 col-sm-3 col-md-3">
-                        <img src="WebWeeklyPlanner.JPG" >
-                    </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="gameProject.png" style="width:50vw; height: 35vh;">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="WebWeeklyPlanner.JPG" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div class="dotdiv">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
-
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" style="right: 328px" href="#imagecarousel" data-slide="prev" >
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#imagecarousel" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
+            
         </div>
-
-        
     </section>
 
 
     <!-- PROJECT SECTION -->
     <section class="projects" id="Projects" >
-        <br>
+        
         <h1 class="h1HeaderName" style="margin-top: 0;">My Projects</h1>
         <div class="divLogo">
             <a href="https://www.linkedin.com/in/sarker-jawad-islam-4673809a/" target="_blank" ><img src="linkedinLogo.jpg"></a><br>
@@ -365,9 +396,9 @@
             <div class="servicesbx">
                 <h2>Web Weekly-Planner</h2><br>
                 <img src="WebWeeklyPlanner.JPG"/>
-                <p style="margin-bottom: 5px">ASP.NET WEB Razor Page application based on the weekly-planner from a previous project.</p>
+                <p >ASP.NET WEB Razor Page application based on the weekly-planner from a previous project.</p>
                 <p>The goal of this project was to create a web version of the weekly planner and familiarise myself with Razor Pages and ASP.NET</p>
-                <a href="https://github.com/sarkerJ/RazorPagesWeeklyPlanner" target="_blank" style="margin-top: 0px;">
+                <a href="https://github.com/sarkerJ/RazorPagesWeeklyPlanner" target="_blank">
                     <span>More Info on Github</span>
                 </a>
             </div>
@@ -405,8 +436,7 @@
             <div class="servicesbx">
                 <h2>Calculator Project</h2><br>
                 <img src="calculator1.JPG" style="width: 50%;"/>
-                <p >A WPF application built using Visual Studio and C#.</p>
-                <p>The goal of the project was to create a calculator that allows a user to execute simple operations. This was the further extended by adding additional operations</p>
+                <p >A WPF application built using Visual Studio and C#. The goal of the project was to create a calculator that allows a user to execute simple operations. This was the further extended by adding "power", "modulo" and "square" operations </p>
                 <a href="https://github.com/sarkerJ/Weekly-Planner" target="_blank">
                     <span>More Info on Github</span>
                 </a>
@@ -430,8 +460,8 @@
     </div> -->
     
     <div class="ContactMe-OuterLayer" id="ContactMe">
-        <br>
-        <br>
+        <br />
+        <br />
         <h1 class="h1HeaderName">Contact Me</h1>
         <div class="cvDiv2">
             <p class="pdWhite">Feel free to download my CV or Contact me if you want to know more.  </p>
@@ -467,7 +497,35 @@
     </div>
     </div>
 
-    <script src="JavaScriptFile.js"></script>
 
+    <script src="JavaScriptFile.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
 </body>
 </html>
