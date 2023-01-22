@@ -485,7 +485,7 @@ input[type=text], input[type=email], select, textarea {
   }
 
   .divLogo img{
-    width: 0.8svw;
+    width: 3svw;
     height: 8vh;
     border-radius: 50%;
   }
